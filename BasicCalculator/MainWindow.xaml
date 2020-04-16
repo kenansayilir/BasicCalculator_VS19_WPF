@@ -1,0 +1,41 @@
+﻿<Window x:Class="BasicCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BasicCalculator"
+        mc:Ignorable="d"
+        Title="Basic Calculator" Height="478.698" Width="296.047" ResizeMode="NoResize">
+    <Grid>
+
+        <TextBox x:Name="txtDigits" HorizontalAlignment="Left" Height="96" TextWrapping="Wrap" Text="0" Width="215" TextAlignment="Right" IsReadOnly="True" TextOptions.TextFormattingMode="Display" VerticalAlignment="Top" FontSize="35" FontFamily="Tahoma" Margin="59,10,0,0" VerticalContentAlignment="Bottom" />
+        <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" Margin="59,331,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="0" Height="50" Background="White" Click="btn_Click" />
+        <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" Margin="59,276,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="1" Height="50" Background="White" Click="btn_Click" />
+        <Button x:Name="btn2" Content="2" HorizontalAlignment="Left" Margin="114,276,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="2" Height="50" Background="White" Click="btn_Click" />
+        <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" Margin="169,276,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="3" Height="50" Background="White" Click="btn_Click" />
+        <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" Margin="59,221,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="4" Height="50" Background="White" Click="btn_Click" />
+        <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" Margin="114,221,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="5" Height="50" Background="White" Click="btn_Click" />
+        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" Margin="169,221,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="6" Height="50" Background="White" Click="btn_Click" />
+        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" Margin="59,166,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="7" Height="50" Background="White" Click="btn_Click" />
+        <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" Margin="114,166,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="8" Height="50" Background="White" Click="btn_Click" />
+        <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" Margin="169,166,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="9" Height="50" RenderTransformOrigin="4.539,-2.961" Background="White" Click="btn_Click" />
+        <Button x:Name="btnpoint" Content="." HorizontalAlignment="Left" Margin="114,331,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="." Height="50" Click="btn_Click" />
+        <Button x:Name="btnequal" Content="=" HorizontalAlignment="Left" Margin="4,386,0,0" VerticalAlignment="Top"  Width="270" FontSize="30" FontFamily="Tahoma" Tag="=" Height="50" Background="Gray" Foreground="White" Click="btn_Click" />
+        <Button x:Name="btnplus" Content="+" HorizontalAlignment="Left" Margin="224,331,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="+" Height="50" Click="btn_Click" />
+        <Button x:Name="btnsour" Content="-" HorizontalAlignment="Left" Margin="224,276,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="-" Height="50" RenderTransformOrigin="4.539,-2.961" Click="btn_Click" />
+        <Button x:Name="btnclear" Content="C" HorizontalAlignment="Left" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="clear" Height="96"  Background="Red" Foreground="White" Margin="4,10,0,0" Click="btn_Click" />
+        <Button x:Name="btnchangesign" Content="±" HorizontalAlignment="Left" Margin="169,331,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="-1" Height="50" Click="btn_Click" />
+        <Button x:Name="btndivide" Content="÷" HorizontalAlignment="Left" Margin="224,166,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="/" Height="50" RenderTransformOrigin="4.539,-2.961" Click="btn_Click" />
+        <Button x:Name="btncrossed" Content="x" HorizontalAlignment="Left" Margin="224,221,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="*" Height="50" RenderTransformOrigin="4.539,-2.961" Click="btn_Click" />
+        <Button x:Name="btnmclear" Content="MC" HorizontalAlignment="Left" Margin="4,166,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="mc" Height="50" RenderTransformOrigin="-0.129,-0.348" Background="#FF4DA6FF" Foreground="White"  Click="btn_Click" />
+        <Button x:Name="btnmsour" Content="M-" HorizontalAlignment="Left" Margin="4,276,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="m-" Height="50" Background="#FF4DA6FF" Foreground="White"  Click="btn_Click" />
+        <Button x:Name="btnmplus" Content="M+" HorizontalAlignment="Left" Margin="4,331,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="m+" Height="50" RenderTransformOrigin="4.539,-2.961" Background="#FF4DA6FF" Foreground="White"  Click="btn_Click" />
+        <Button x:Name="btnmreg" Content="MR" HorizontalAlignment="Left" Margin="4,221,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="mr" Height="50" RenderTransformOrigin="4.539,-2.961" Background="#FF4DA6FF" Foreground="White"  Click="btn_Click" />
+        <Button x:Name="btnsquareroot" Content="√" HorizontalAlignment="Left" Margin="4,111,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="squareroot" Height="50" RenderTransformOrigin="4.539,-2.961" Click="btn_Click" />
+        <Button x:Name="btnsquare" Content="x²" HorizontalAlignment="Left" Margin="59,111,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="square" Height="50" RenderTransformOrigin="4.539,-2.961" Click="btn_Click" />
+        <Button x:Name="btnoneover" Content="¹/x" HorizontalAlignment="Left" Margin="169,111,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="oneover" Height="50" RenderTransformOrigin="4.539,-2.961" Click="btn_Click" />
+        <Button x:Name="btnback" Content="←" HorizontalAlignment="Left" Margin="224,111,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="back" Height="50" RenderTransformOrigin="4.539,-2.961" Background="Red" Foreground="White" Click="btn_Click" />
+        <Button x:Name="btnpercent" Content="%" HorizontalAlignment="Left" Margin="114,111,0,0" VerticalAlignment="Top"  Width="50" FontSize="30" FontFamily="Tahoma" Tag="%" Height="50" RenderTransformOrigin="4.539,-2.961" Click="btn_Click" />
+
+    </Grid>
+</Window>
