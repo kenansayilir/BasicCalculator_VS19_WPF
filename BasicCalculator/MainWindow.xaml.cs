@@ -1,4 +1,61 @@
-﻿using System;
+﻿/**
+ #########################################################################
+ #          __  ___  _______ .__   __.      ___      .__   __.           #
+ #         |  |/  / |   ____||  \ |  |     /   \     |  \ |  |           #
+ #         |  '  /  |  |__   |   \|  |    /  ^  \    |   \|  |           #
+ #         |    <   |   __|  |  . `  |   /  /_\  \   |  . `  |           #
+ #         |  .  \  |  |____ |  |\   |  /  _____  \  |  |\   |           #
+ #         |__|\__\ |_______||__| \__| /__/     \__\ |__| \__|           #
+ #                                                                       #
+ #      _______.     ___   ____    ____  __   __       __  .______       #
+ #     /       |    /   \  \   \  /   / |  | |  |     |  | |   _  \      #
+ #    |   (----`   /  ^  \  \   \/   /  |  | |  |     |  | |  |_)  |     #
+ #     \   \      /  /_\  \  \_    _/   |  | |  |     |  | |      /      #
+ # .----)   |    /  _____  \   |  |     |  | |  `----.|  | |  |\  \----. #
+ # |_______/    /__/     \__\  |__|     |__| |_______||__| | _| `._____| #
+ #                                                                       #
+ #                                                                       #
+ #   BASIC CALCULATOR                                                    #
+ #                                                                       #
+ #   Copyright (C) 2017 Kenan SAYILIR                                    #
+ #   kensay@users.sourceforge.net                                        #
+ #   https://github.com/kenansayilir                                     #
+ #   https://sourceforge.net/u/kensay/profile/                           #
+ #                                                                       #
+ #########################################################################
+ #  Bu program özgür yazılımdır: Özgür Yazılım Vakfı tarafından          #
+ #  yayımlanan GNU Genel Kamu Lisansı’nın sürüm 3 ya da daha sonraki     #
+ #  sürümlerinin hükümleri altında yeniden dağıtabilir ve/veya           #
+ #  değiştirebilirsiniz.                                                 #
+ #                                                                       #
+ #  Bu program, yararlı olması umuduyla dağıtılmış olup, programın       #
+ #  BİR TEMİNATI YOKTUR; TİCARETİNİN YAPILABİLİRLİĞİNE VE ÖZEL BİR AMAÇ  #
+ #  İÇİN UYGUNLUĞUNA dair bir teminat da vermez. Ayrıntılar için GNU     #
+ #  Genel Kamu Lisansı’na göz atınız.                                    #
+ #                                                                       #
+ #  Bu programla birlikte GNU Genel Kamu Lisansı’nın bir kopyasını elde  #
+ #  etmiş olmanız gerekir. Eğer elinize ulaşmadıysa                      #
+ #  <http://www.gnu.org/licenses/> adresine bakınız.                     #
+ #                                                                       #
+ #########################################################################
+ #  This program is free software: you can redistribute it and/or modify #
+ #  it under the terms of the GNU General Public License as published by #
+ #  the Free Software Foundation, either version 3 of the License, or    #
+ #  any later version.                                                   #
+ #                                                                       #
+ #  This program is distributed in the hope that it will be useful,      #
+ #  but WITHOUT ANY WARRANTY; without even the implied warranty of       #
+ #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the        #
+ #  GNU General Public License for more details.                         #
+ #                                                                       #
+ #  You should have received a copy of the GNU General Public License    #
+ #  along with this program. If not, see <http://www.gnu.org/licenses/>. #
+ #                                                                       #
+ #########################################################################
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
