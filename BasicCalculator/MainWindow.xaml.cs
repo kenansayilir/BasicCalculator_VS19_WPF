@@ -125,7 +125,7 @@ namespace BasicCalculator
                         setDigits();
                         break;
                     case "back":
-                        if(txtDigits.Text.Length <= 1 || isNewValue)
+                        if(txtDigits.Text.Length <= 1)
                         {
                             txtDigits.Text = "0";
                         }
@@ -224,10 +224,7 @@ namespace BasicCalculator
                     }
                     break;
                 case "oneover":
-                    if (value1 != 0)
-                    {
-                        currentvalue = 1 / value1;
-                    }
+                    currentvalue = 1 / value1;
                     break;
                 case "+":
                     currentvalue = value1 + value2;
@@ -239,10 +236,7 @@ namespace BasicCalculator
                     currentvalue = value1 * value2;
                     break;
                 case "/":
-                    if (value2 > 0)
-                    {
-                        currentvalue = value1 / value2;
-                    }
+                    currentvalue = value1 / value2;
                     break;
                 case "%":
                     currentvalue = value1 * value2 / 100;
