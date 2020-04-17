@@ -96,9 +96,9 @@ namespace BasicCalculator
             Button btn = (Button)sender;
 
 
-            if(btn == btn0 || btn == btn1 || btn == btn2 || btn == btn3 || btn == btn4 || btn == btn5 || btn == btn6 || btn == btn7 || btn == btn8 || btn == btn9 || btn == btnpoint)
+            if (btn == btn0 || btn == btn1 || btn == btn2 || btn == btn3 || btn == btn4 || btn == btn5 || btn == btn6 || btn == btn7 || btn == btn8 || btn == btn9 || btn == btnpoint)
             {
-                if(txtDigits.Text == "0" || isNewValue)
+                if (txtDigits.Text == "0" || isNewValue)
                 {
                     if (btn == btnpoint)
                     {
@@ -125,7 +125,7 @@ namespace BasicCalculator
                         setDigits();
                         break;
                     case "back":
-                        if(txtDigits.Text.Length <= 1 || isNewValue)
+                        if (txtDigits.Text.Length <= 1 || isNewValue)
                         {
                             txtDigits.Text = "0";
                         }
@@ -198,7 +198,7 @@ namespace BasicCalculator
 
         private void setprocess(string prc)
         {
-            if(process.Length > 0)
+            if (process.Length > 0)
             {
                 calculate();
             }
@@ -218,7 +218,7 @@ namespace BasicCalculator
                     currentvalue = value1 * value1;
                     break;
                 case "squareroot":
-                    if(value1 > 0)
+                    if (value1 > 0)
                     {
                         currentvalue = (decimal)Math.Sqrt((double)value1);
                     }
@@ -251,7 +251,7 @@ namespace BasicCalculator
                     break;
             }
             process = "";
-            isNewValue  = true;
+            isNewValue = true;
             calculatedvalue = 0;
             setDigits();
         }
